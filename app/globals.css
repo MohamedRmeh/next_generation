@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  @apply bg-black bg-dot-white/[0.2];
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #cbd5e0, #a0aec0, #718096);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Italicized-word {
+  @apply font-semibold underline underline-offset-8 decoration-slate-400 -rotate-2
+}
+
+.img-background {
+  background-color: rgba(0, 0, 0, 0.593);
+}
+
